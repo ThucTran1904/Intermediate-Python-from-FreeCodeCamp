@@ -14,7 +14,7 @@ def test():
     print('List popped ', fukList.pop(1))
     print('List after pop', fukList)
 
-    # remove() method removes the specified item
+    # remove() method removes the the first apprearance of the item in the list
     fukList.remove('banana')
     print('List removed', fukList)
 
@@ -33,11 +33,36 @@ def test():
     # reverse all the items in the list
     item = mylist.reverse()
 
-    # sorted the number and the words, y
+    # sorted and sort 
     numbList = [5,-9,3,2,1,8,0,9]
     newNumbList = sorted(numbList, key=item, reverse=True)
     print("Sort NumbList:", newNumbList)
-    
+
+    zeroList = [0] * 5
+    print(zeroList)
+    numbListXzeroList = newNumbList + zeroList
+    print("Combination list: ", numbListXzeroList)
+
+    list_fruit  = ['banana', 'Dragon Fruits', 'Apple']
+    list_copy = list_fruit
+    '''
+    Is this case when you edit the copy list, the list fruit will be changed correspondingly
+    Because both lists refer to the same list inside the memory
+    '''
+    list_copy1 = list_fruit.copy()
+    list_copy2 = list(list_fruit)
+    list_copy3 = list_fruit[:]
+
+    list_copy1.append('Guava')
+    list_copy2.append('Strawberry')
+    list_copy3.append('Grape')
+    print('list_copy1', list_copy1)
+    print('list_copy2', list_copy2)
+    print('list_copy3', list_copy3)
+
+    # a new way to create a new list
+    b = [i*i for i in newNumbList]
+    print('Fuck', b)
      
 
 # What did u do with your life
