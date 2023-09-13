@@ -24,4 +24,48 @@ else:
 
 #lend method for tuple
 appleTuple = 'a','p','p','l','e'
-print()
+length = len(appleTuple)
+# using lend method with list                                                     
+print(length)
+# count method, to count the number of appearances of a specific item
+print(appleTuple.count('e'))
+# index method, return the first apperance of the sepecified item
+print(appleTuple.index('e'))
+# convert a tuple to a list and vice versa
+convert_list = list(appleTuple)
+print(convert_list)
+# convert a that list to tuple again
+tuplelist = tuple(convert_list)
+print(tuplelist)
+
+a = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+b = a[2:5] # except for the last element
+print(b)
+
+c = a[2:]
+print(c)
+
+d = a[::-2]
+print(d)
+
+# Unpack the tuple
+Thuk_tuple = "Thuk", 21, "DaNang"
+name, age, city = Thuk_tuple
+print(name, age, city)
+
+# We can unpack multiple elements with * (star)
+new_tuple = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+i1, *i2, i3 = new_tuple
+print(i2)
+
+import sys 
+tuplee = 0, 1, 2, "hello", True
+listtt = [0, 1, 2, "hello", True]
+print(sys.getsizeof(tuplee), "bytes")
+print(sys.getsizeof(listtt), "bytes")
+# ==> with the same items but tuple consume less bytes than the list
+
+import timeit
+print(timeit.timeit(stmt="[0,1,2,3,4]", number=1000000))
+print(timeit.timeit(stmt="(0,1,2,3,4)", number=1000000))
+# the time when creating a tuple is also much less than the time when creating a list
