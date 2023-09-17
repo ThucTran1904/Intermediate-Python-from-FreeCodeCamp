@@ -24,9 +24,9 @@ newEmptySet.add(3)
 newEmptySet.add(4)
 newEmptySet.add(5)
 # Remove an item from the set
-# newEmptySet.remove(1)
+newEmptySet.remove(1)
 # Discard the item from the set
-# newEmptySet.discard(2)
+newEmptySet.discard(2)
 '''
 Remove vs Discard
 Similarity:
@@ -36,10 +36,10 @@ Difference:
 - Discard: an element from the set, if it doesn't exist already, the program gonna still okay
 '''
 # Clear method, for empty our set
-# newEmptySet.clear()
+newEmptySet.clear()
 
 # Pop method, remove the fist element from the set
-# print(newEmptySet.pop() )
+print(newEmptySet.pop())
 
 for x in newEmptySet:
     print(x)
@@ -71,8 +71,8 @@ diff2 = setA.symmetric_difference(setB)
 print(diff2)
 
 # Update a set
-# setA.update(setB)
-# setA.intersection_update(setB)
+setA.update(setB)
+setA.intersection_update(setB)
 '''
 It happens the same with difference update, and symmetric difference update
 '''
