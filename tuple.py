@@ -4,8 +4,7 @@ tuple3 = ('ThucDeptrai')
 '''
 In case you declare a tuple like the third one, python gonna consider it like a string, to handle this situation,
 you need to add a comma to the end of that tuple
-=> tuple3 = ('ThucDeptrai',)
-
+=> tuple3 = ('ThucDeptrai')
 '''
 print(type(tuple3))
 # Create a tuple using a list
