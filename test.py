@@ -6,3 +6,4 @@ fruitList = ['Banana', 'Cherry','Orange', 'Longan','Guava', 'Orange']
 fruitList.remove('Orange')
 
 print('Fruit list sort ', fruitList)
+# what the hell is that
