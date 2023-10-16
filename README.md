@@ -109,3 +109,8 @@
   ```
   + You can see execution time to create 1 million lists is approximate at about 0.08s, on the other side with tuple is just 0.15s
   + In the large scope, with huge projects, the execution time with list is greater at 5.(3) times than with tuples
+  + 
+
+### I'm still continually editing...
+
+
