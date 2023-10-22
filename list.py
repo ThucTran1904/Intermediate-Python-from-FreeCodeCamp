@@ -11,7 +11,7 @@ def test():
     print('List inserted ',fukList)
 
     # pop(position) method removes the element at the specified position, Default is 0
-    print('List popped ', fukList.pop(1))
+    print('List popped ', fukList.pop(1) )
     print('List after pop', fukList)
 
     # remove() method removes the the first apprearance of the item in the list

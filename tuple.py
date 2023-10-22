@@ -4,7 +4,7 @@ tuple3 = ('ThucDeptrai')
 '''
 In case you declare a tuple like the third one, python gonna consider it like a string, to handle this situation,
 you need to add a comma to the end of that tuple
-=> tuple3 = ('ThucDeptrai')
+=> tuple3 = ('ThucDeptrai',)
 '''
 print(type(tuple3))
 # Create a tuple using a list
@@ -59,9 +59,9 @@ print(i2)
 
 import sys 
 tuplee = 0, 1, 2, "hello", True
-listtt = [0, 1, 2, "hello", True]
+listt = [0, 1, 2, "hello", True]
 print(sys.getsizeof(tuplee), "bytes")
-print(sys.getsizeof(listtt), "bytes")
+print(sys.getsizeof(listt), "bytes")
 # ==> with the same items but tuple consume less bytes than the list
 
 import timeit
