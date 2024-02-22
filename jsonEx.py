@@ -21,9 +21,9 @@ personDict = json.loads(personJSON)
 # print(personDict)
 
 # Open as the read mode
-# with open('person.json', 'r') as file:
-#     person = json.load(file)
-#     print(person)
+with open('person.json', 'r') as file:
+    person = json.load(file)
+    print(person)
     
 
 class User:
@@ -45,7 +45,7 @@ def encode_user(o):
         raise TypeError('Object of type User is not JSON serializable')
 
 userJSON = json.dumps(user, default=encode_user)
-# print(userJSON)
+print(userJSON)
 
 class UserEncoder(JSONEncoder):
     def default(self, o):
@@ -57,8 +57,8 @@ userJSON = json.dumps(user, cls=UserEncoder) # or an alternative one: UserEncode
 # print(userJSON)
 
 # Convert the user JSON to dict
-# user = json.loads(userJSON)
-# print(user) # we have a dict here
+user = json.loads(userJSON)
+print(user) # we have a dict here
 def decode_user(dict):
     if User.__name__ in dict:
         return User(name=dict['name'], age=dict['age'])
